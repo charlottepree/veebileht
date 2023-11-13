@@ -9,8 +9,28 @@
 
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+    <form action="mailto:mingimeil@email.com" method="post">
+        <div class="elem-group">
+        <label for="name">Teie nimi</label>
+        <input type="text" id="name" name="visitor_name" placeholder="Mari Maasikas" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="elem-group">
+        <label for="email">Teie E-mail</label>
+        <input type="email" id="email" name="visitor_email" placeholder="marimaasikas@email.com" required>
+        </div>
+        <div class="elem-group">
+        <label for="phone">Teie telefoninumber</label>
+        <input type="tel" id="phone" name="visitor_phone" placeholder="12345678" required>
+        </div>
+        <div class="elem-group">
+            <label2 for="kiri">Kirja sisu</label2>
+            <input type="text" id="kiri" name="kiri" placeholder="Teie sõnum" pattern=[A-Z\sa-z]{3,500} required>
+        </div>
+
+        
+        <button type="submit">Saada kiri</button>
+    </form>
+    
 
 </body>
 </html>
