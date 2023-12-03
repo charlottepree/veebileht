@@ -1,3 +1,4 @@
+/* kinnitusleht.css*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,6 +8,7 @@ body {
     align-items: center;
     background-color:#e3bca6;
 }
+
 
 body::before {
     content: "";
