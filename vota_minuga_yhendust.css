@@ -9,29 +9,40 @@ body {
 }
 
 .topnav {
-  background-color: #333;
-  overflow: hidden;
+  background-color: #ffffff;
   display: flex;
-  width: 100%;
-  box-sizing: border-box;
+  justify-content: left;
+  overflow: hidden;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: #000000;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
+.topnav :first-child {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  margin-left: 10%;
+  text-decoration: none;
+  font-size: 17px;
+}
+
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #e3bca6;
   color: black;
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #e3bca6;
   color: white;
 }
 
