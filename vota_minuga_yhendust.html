@@ -6,9 +6,24 @@
     <title>Võta minuga ühendust</title>
     <link rel="stylesheet" href="vota_minuga_yhendust.css">
     <script>
-        function suunaKinnitamislehele() {
+        function saadaMeil() {
+            var nimi = document.getElementById("name").value;
+            var telefon = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+            var kiri = document.getElementById("message").value;
+
+            // Koosta meili link koos vormi sisuga
+            var meiliLink = "mailto:nurmannaliisa@gmail.com?subject=Kontaktivorm&body=";
+            meiliLink += "Nimi: " + nimi + "%0D%0A";
+            meiliLink += "Telefon: " + telefon + "%0D%0A";
+            meiliLink += "E-post: " + email + "%0D%0A";
+            meiliLink += "Kiri: " + kiri;
+
+            // Ava e-posti kliendi aken
+            window.location.href = meiliLink;
+
+            // Suuna kinnituslehele
             window.location.href = "kinnitusleht.html";
-            return false;
         }
     </script>
 </head>
@@ -16,13 +31,13 @@
     <div class="topnav">
         <a href="pealeht.html">Minust</a>
         <a href="#">Teenused</a>
-        <a class="active" href=# onclick="return suunaKinnitamislehele();">Võta minuga ühendust</a>
+        <a class="active" href="#" onclick="saadaMeil()">Võta minuga ühendust</a>
         <a href="blogi_vaheleht.html">Blogi</a>
     </div>
 
     <div id="container">
         <div id="form-container">
-            <form onsubmit="return suunaKinnitamislehele();">
+            <form>
                 <label for="name">Teie nimi:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -35,12 +50,10 @@
                 <label for="message">Teie kiri:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
 
-                <input type="submit" value="Saada">
+                <input type="button" value="Saada" onclick="saadaMeil()">
             </form>
         </div>
         <div id="image-container"></div>
     </div>
-
-
 </body>
 </html>
