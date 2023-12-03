@@ -6,23 +6,27 @@
     <title>Võta minuga ühendust</title>
     <link rel="stylesheet" href="vota_minuga_yhendust.css">
     <script>
+    //See on JavaScriptis kirjutatud funktsioon, mille ülesanne on pärast nupu vajutust võtta täidetud vormi 
+    //sisu ja anda need väärtused edasi funktsioonile mailto:, mis avab meilirakenduse ja vormistab kirja.
+    //Lisaks on tal ülesanne liikuda kinnituslehele pärast nupu vajutust
         function saadaMeil() {
+            // Võtab vormi sisu
             var nimi = document.getElementById("name").value;
             var telefon = document.getElementById("phone").value;
             var email = document.getElementById("email").value;
             var kiri = document.getElementById("message").value;
 
-            // Koosta meili link koos vormi sisuga
+            //Loob meili lingi vastavate väärtustega
             var meiliLink = "mailto:nurmannaliisa@gmail.com?subject=Kontaktivorm&body=";
             meiliLink += "Nimi: " + nimi + "%0D%0A";
             meiliLink += "Telefon: " + telefon + "%0D%0A";
             meiliLink += "E-post: " + email + "%0D%0A";
             meiliLink += "Kiri: " + kiri;
 
-            // Ava e-posti kliendi aken
+            //Avab meilirakenduse
             window.location.href = meiliLink;
 
-            // Suuna kinnituslehele
+            //Liigub kinnituslehele
             window.location.href = "kinnitusleht.html";
         }
     </script>
@@ -31,7 +35,7 @@
     <div class="topnav">
         <a href="pealeht.html">Minust</a>
         <a href="#">Teenused</a>
-        <a class="active" href="#" onclick="saadaMeil()">Võta minuga ühendust</a>
+        <a class="active" href="vota_minuga_yhendust.html">Võta minuga ühendust</a>
         <a href="blogi_vaheleht.html">Blogi</a>
     </div>
 
@@ -49,7 +53,7 @@
 
                 <label for="message">Teie kiri:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
-
+                <!-- Nupule vajutus käivitab funktsiooni-->
                 <input type="button" value="Saada" onclick="saadaMeil()">
             </form>
         </div>
