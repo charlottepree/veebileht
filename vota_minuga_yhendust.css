@@ -5,7 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f4f4f4;
+  background-color: #e3bca6
 }
 
 .topnav {
@@ -13,6 +13,8 @@ body {
   display: flex;
   justify-content: left;
   overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
   margin-left: -10px;
   margin-right: -10px;
 }
