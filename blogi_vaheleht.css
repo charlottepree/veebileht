@@ -2,30 +2,35 @@
   box-sizing: border-box;
 }
 
-body {
+
+body, html {
+  height: 100%;
   font-family: Arial;
-  padding: 20px;
-  background: #f1f1f1;
+  padding: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background: #e3bca6;
 }
+
 
 .row {
   padding-left: 20%;
   padding-right: 20%;
 }
 
-.header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-  background: white;
-}
 
+.header {
+  padding-left: 0px;
+  padding: 1px;
+  font-size: 30px;
+  text-align: center;
+  background: #e3bca6;
+}
 
 .leftcolumn {
   float: left;
   width: 75%;
 }
-
 
 .rightcolumn {
   float: left;
@@ -41,6 +46,11 @@ body {
 }
 
 
+div.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 .row:after {
   content: "";
   display: table;
@@ -51,13 +61,63 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: #ffffff;
   margin-top: 20px;
 }
+
+
+.footer {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
 
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {
     width: 100%;
     padding: 0;
   }
+}
+
+
+.topnav {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: left;
+  overflow: hidden;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav :first-child {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  margin-left: 10%;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #e3bca6;
+  color: black;
+}
+
+
+.topnav a.active {
+  background-color: #e3bca6;
+  color: rgb(0, 0, 0);
 }

@@ -1,5 +1,7 @@
 body, html {
     height: 100%;
+    font-family: Arial;
+    background: #e3bca6;
   }
   
 
@@ -10,12 +12,10 @@ body, html {
 
 .bg-image {
     background-image: url("placeholder.jpg");
-  
-    filter: blur(8px);
+    filter: blur(50%); opacity: 80%;
+    margin-top: 12px;
     -webkit-filter: blur(8px);
-  
     height: 100%;
-  
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,31 +39,44 @@ body, html {
   }
 
 
-
-
-
-
-
-.topnav {
-    background-color: #333;
+  .topnav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: left;
     overflow: hidden;
+    margin-left: -10px;
+    margin-right: -10px;
   }
   
+
   .topnav a {
     float: left;
-    color: #f2f2f2;
+    color: #000000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
   }
   
+  
+  .topnav :first-child {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    margin-left: 10%;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: #e3bca6;
     color: black;
   }
   
+  
   .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
+    background-color: #e3bca6;
+    color: rgb(0, 0, 0);
   }
