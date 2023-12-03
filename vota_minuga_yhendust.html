@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Võta minuga ühendust</title>
+    <link rel="stylesheet" href="vota_minuga_yhendust.css">
+    <script>
+        function suunaKinnitamislehele() {
+            window.location.href = "kinnitusleht.html";
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <div class="topnav">
+        <a href="pealeht.html">Minust</a>
+        <a href="#">Teenused</a>
+        <a class="active" href=# onclick="return suunaKinnitamislehele();">Võta minuga ühendust</a>
+        <a href="blogi_vaheleht.html">Blogi</a>
+    </div>
+
+    <div id="container">
+        <div id="form-container">
+            <form onsubmit="return suunaKinnitamislehele();">
+                <label for="name">Teie nimi:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Telefoninumber:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Teie kiri:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Saada">
+            </form>
+        </div>
+        <div id="image-container"></div>
+    </div>
+
+
+</body>
+</html>
