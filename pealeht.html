@@ -9,13 +9,12 @@
 
 <body>
 
-  <div class="topnav">
-    <a class="active" href="#Minust">Minust</a>
-    <a href="#Teenused">Teenused</a>
+  <div class="topnav" onscroll="updateButton(scrollY)" id="myHeader">
+    <a class="active" href="#Minust" id="minust">Minust</a>
+    <a href="javascript:void(0)" onclick="smoothScroll(document.getElementById('Teenused'))" id="teenused">Teenused</a>
     <a href="broneerimine_vaheleht.html">Broneeri aeg</a>
     <a href="blogi_vaheleht.html">Blogi</a>
   </div>
-
 
 <div class="bg-image"></div>
 <div class="bg-text">
@@ -23,9 +22,46 @@
     <p>lühitutvustus iseendast</p>
 </div>
 
+<div class="columnParent" id="Teenused">
+<div class="columns">
+  <ul class="price">
+    <li class="header">1 x personaaltreening</li>
+    <li class="white">20 € / kord</li>
+    <li>Tervisedeklaratsioon</li>
+    <li>Kehalise võimekuse analüüs</li>
+    <li>Juhendamine jõusaalis</li>
+    <li>Tasuta 7-päevane jõusaalipakett</li>
+    <li class="white"><a href="broneerimine_vaheleht.html" class="button">Võta ühendust</a></li>
+  </ul>
+
+</div>
+<div class="columns">
+  <ul class="price">
+    <li class="header">10 x personaaltreening</li>
+    <li class="white">180 € / 10 korda</li>
+    <li>18 € / kord</li>
+    <li>+ Personaalne kava</li>
+    <li>+ Toitumisnõustamine</li>
+    <li>+ Juurdepääs toitumisrakendusele</li>
+    <li class="white"><a href="broneerimine_vaheleht.html" class="button">Võta ühendust</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Toitumisnõustamine</li>
+    <li class="white">15 € / kord</li>
+    <li>Tervisedeklaratsioon</li>
+    <li>Menüü analüüs</li>
+    <li>Nädalane näidiskava</li>
+    <li>Võimalik ka veebivahendusel</li>
+    <li class="white"><a href="broneerimine_vaheleht.html" class="button">Võta ühendust</a></li>
+  </ul>
+</div>
+</div>
 
 
 
-
+<script src="pealeht.js"></script>
 </body>
 </html>

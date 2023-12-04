@@ -63,10 +63,6 @@ div.card {
   text-align: center;
   background: #ffffff;
   margin-top: 20px;
-}
-
-
-.footer {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
   margin-left: -10px;
   margin-right: -10px;
@@ -80,6 +76,17 @@ div.card {
   }
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100.5%;
+}
+
+
+.sticky + .topnav {
+  padding-top: 102px;
+}
+
 
 .topnav {
   background-color: #ffffff;
@@ -88,6 +95,7 @@ div.card {
   overflow: hidden;
   margin-left: -10px;
   margin-right: -10px;
+  z-index: 10;
 }
 
 
