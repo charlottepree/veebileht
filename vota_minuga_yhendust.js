@@ -1,14 +1,17 @@
 // võta_minuga_yhendust.js
 
-// See on JavaScriptis kirjutatud funktsioon, mille ülesanne on pärast nupu vajutust võtta täidetud vormi 
-// sisu ja anda need väärtused edasi funktsioonile mailto:, mis avab meilirakenduse ja vormistab kirja.
-// Lisaks on tal ülesanne liikuda kinnituslehele pärast nupu vajutust
 function saadaMeil() {
     // Võtab vormi sisu
     var nimi = document.getElementById("name").value;
     var telefon = document.getElementById("phone").value;
     var email = document.getElementById("email").value;
     var kiri = document.getElementById("message").value;
+
+    // Kontrollib, kas kõik väljad on täidetud
+    if (!nimi || !telefon || !email || !kiri) {
+        alert("Palun täida kõik väljad enne meili saatmist!");
+        return;
+    }
 
     // Loob meili lingi vastavate väärtustega
     var meiliLink = "mailto:charlotte.pree@gmail.com?subject=Kontaktivorm&body=";
