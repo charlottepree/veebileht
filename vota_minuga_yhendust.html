@@ -7,31 +7,9 @@
     <title>Võta minuga ühendust</title>
     <link rel="stylesheet" href="vota_minuga_yhendust.css">
     <link rel="stylesheet" href="yhine.css">
-    <script>
-    //See on JavaScriptis kirjutatud funktsioon, mille ülesanne on pärast nupu vajutust võtta täidetud vormi 
-    //sisu ja anda need väärtused edasi funktsioonile mailto:, mis avab meilirakenduse ja vormistab kirja.
-    //Lisaks on tal ülesanne liikuda kinnituslehele pärast nupu vajutust
-        function saadaMeil() {
-            // Võtab vormi sisu
-            var nimi = document.getElementById("name").value;
-            var telefon = document.getElementById("phone").value;
-            var email = document.getElementById("email").value;
-            var kiri = document.getElementById("message").value;
+    <script src="vota_minuga_yhendust.js"></script>
 
-            //Loob meili lingi vastavate väärtustega
-            var meiliLink = "mailto:nurmannaliisa@gmail.com?subject=Kontaktivorm&body=";
-            meiliLink += "Nimi: " + nimi + "%0D%0A";
-            meiliLink += "Telefon: " + telefon + "%0D%0A";
-            meiliLink += "E-post: " + email + "%0D%0A";
-            meiliLink += "Kiri: " + kiri;
 
-            //Avab meilirakenduse
-            window.location.href = meiliLink;
-
-            //Liigub kinnituslehele
-            window.location.href = "kinnitusleht.html";
-        }
-    </script>
 </head>
 <body>
     <div class="topnav">

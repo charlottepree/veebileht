@@ -21,7 +21,7 @@ body {
   width: 80%;
   max-width: 800px;
   margin: 20px auto;
-  margin-top: 200px;
+  margin-top: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   background-color: #fff;
@@ -37,7 +37,7 @@ body {
 
 #image-container {
   flex: 1;
-  background: url('vmü.jpg') center/cover;
+  background: url("pildid/24.jpg") center/cover;
 }
 
 
