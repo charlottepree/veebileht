@@ -1,65 +1,32 @@
 /* vota_minuga_yhendust.css*/
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #e3bca6
 }
 
 
 .topnav {
-  background-color: #ffffff;
   display: flex;
-  justify-content: left;
-  overflow: hidden;
   width: 100%;
   box-sizing: border-box;
-  margin-left: -10px;
-  margin-right: -10px;
-  margin-top: 5px;
+  margin-top: 7px;
 }
 
-.topnav a {
-  float: left;
-  color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav :first-child {
-  float: left;
-  color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  margin-left: 10%;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #e3bca6;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #e3bca6;
-  color: white;
-}
 
 #container {
   display: flex;
   width: 80%;
   max-width: 800px;
   margin: 20px auto;
+  margin-top: 200px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   background-color: #fff;
 }
+
 
 #form-container {
   flex: 1;
@@ -67,19 +34,23 @@ body {
   box-sizing: border-box;
 }
 
+
 #image-container {
   flex: 1;
   background: url('vmü.jpg') center/cover;
 }
 
+
 form {
   max-width: 100%;
 }
+
 
 label {
   display: block;
   margin-bottom: 8px;
 }
+
 
 input,
 textarea {
@@ -89,12 +60,16 @@ textarea {
   box-sizing: border-box;
 }
 
+
 input[type="submit"] {
   background-color:  #04AA6D;
   color: #fff;
   cursor: pointer;
 }
 
+
 input[type="submit"]:hover {
   background-color:  #049a63;
 }
+
+

@@ -1,12 +1,10 @@
 /* kinnitusleht.css*/
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:#e3bca6;
 }
 
 
@@ -23,47 +21,15 @@ body::before {
     margin-top: 12px;
 }
 
+
 .topnav {
-    background-color: #ffffff;
     display: flex;
-    justify-content: left;
-    overflow: hidden;
     width: 100%;
     box-sizing: border-box;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: 5px;
+    margin-top: 7px;
   }
   
-  .topnav a {
-    float: left;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav :first-child {
-    float: left;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    margin-left: 10%;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #e3bca6;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #e3bca6;
-    color: white;
-  }
-
+ 
 #container {
     display: flex;
     flex-direction: column;
@@ -85,14 +51,17 @@ body::before {
     align-items: center;
 }
 
+
 h2 {
     color: #e3bca6
 }
+
 
 p {
     margin-top: 20px;
     font-size: 18px;
 }
+
 
 #back-to-home {
     margin-top: 20px;
@@ -104,6 +73,7 @@ p {
     cursor: pointer;
     margin-top: 20px;
 }
+
 
 #back-to-home:hover {
     background-color: #e0b69e

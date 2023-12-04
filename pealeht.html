@@ -4,22 +4,39 @@
 <head>
     <title>pealeht.html</title>
     <link rel="stylesheet" type="text/css" href= "pealeht.css">
+    <link rel="stylesheet" type="text/css" href= "yhine.css">
     <meta charset="UTF-8">
 </head>
 
 <body>
 
   <div class="topnav" onscroll="updateButton(scrollY)" id="myHeader">
-    <a class="active" href="#Minust" id="minust">Minust</a>
+    <a class="active" href="#Minust" onclick="smoothScroll(document.getElementById('topScreen'))" id="minust">Minust</a>
     <a href="javascript:void(0)" onclick="smoothScroll(document.getElementById('Teenused'))" id="teenused">Teenused</a>
-    <a href="broneerimine_vaheleht.html">Broneeri aeg</a>
+    <a href="vota_minuga_yhendust.html">Võta minuga ühendust</a>
     <a href="blogi_vaheleht.html">Blogi</a>
   </div>
 
-<div class="bg-image"></div>
+<div class="bg-image" id="topScreen"></div>
 <div class="bg-text">
-    <h1>Personaaltreener Charlotte</h1>
-    <p>lühitutvustus iseendast</p>
+    <h1>Hei! Olen treener Charlotte</h1>
+    <p>
+      - Olen läbinud IntensivePT personaaltreenerite koolituse ja oman EQF 4 taseme kvalifikatsiooni.
+      <br>
+      <br>
+      - Olen läbinud mitmeid rühmatreeneri koolitusi ja oman vastavaid litsentse. 
+      <br>
+      <br>
+      - Oman põhjalikke teadmisi inimese anatoomiast ja füsioloogiast just tänu koolitustele ja tervisehoiuõpingutele.
+      <br>
+      <br>
+      <br>
+      <br>
+      Treenerina tegutsen ma juba alates 2022. aasta algusest. Hetkel töötan nii personaal- kui ka rühmatreenerina.
+      <br>
+      <br>
+      Minuga saab trenni teha Tartu Fitlife'is, Lemon Gymis ja Sõbrakeskuse 24/7 Fitnessis.
+    </p>
 </div>
 
 <div class="columnParent" id="Teenused">
@@ -31,7 +48,7 @@
     <li>Kehalise võimekuse analüüs</li>
     <li>Juhendamine jõusaalis</li>
     <li>Tasuta 7-päevane jõusaalipakett</li>
-    <li class="white"><a href="broneerimine_vaheleht.html" class="button">Võta ühendust</a></li>
+    <li class="white"><a href="vota_minuga_yhendust.html" class="button">Võta ühendust</a></li>
   </ul>
 
 </div>
@@ -43,7 +60,7 @@
     <li>+ Personaalne kava</li>
     <li>+ Toitumisnõustamine</li>
     <li>+ Juurdepääs toitumisrakendusele</li>
-    <li class="white"><a href="broneerimine_vaheleht.html" class="button">Võta ühendust</a></li>
+    <li class="white"><a href="vota_minuga_yhendust.html" class="button">Võta ühendust</a></li>
   </ul>
 </div>
 
@@ -55,7 +72,7 @@
     <li>Menüü analüüs</li>
     <li>Nädalane näidiskava</li>
     <li>Võimalik ka veebivahendusel</li>
-    <li class="white"><a href="broneerimine_vaheleht.html" class="button">Võta ühendust</a></li>
+    <li class="white"><a href="vota_minuga_yhendust.html" class="button">Võta ühendust</a></li>
   </ul>
 </div>
 </div>
@@ -63,5 +80,6 @@
 
 
 <script src="pealeht.js"></script>
+
 </body>
 </html>

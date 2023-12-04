@@ -1,20 +1,8 @@
-body, html {
-    height: 100%;
-    font-family: Arial;
-    background: #e3bca6;
-  }
-  
-
- * {
-    box-sizing: border-box;
-  }
-  
-
 .bg-image {
     background-image: url("placeholder.jpg");
-    filter: blur(50%); opacity: 80%;
+    opacity: 80%;
+    filter: blur(10px);
     margin-top: 12px;
-    -webkit-filter: blur(8px);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -36,61 +24,6 @@ body, html {
     width: 80%;
     padding: 20px;
     text-align: center;
-  }
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100.5%;
-  }
-
-
-.sticky + .topnav {
-    padding-top: 102px;
-  }
-
-
-.topnav {
-    background-color: #ffffff;
-    display: flex;
-    justify-content: left;
-    overflow: hidden;
-    margin-left: -10px;
-    margin-right: -10px;
-    z-index: 10;
-  }
-  
-
-.topnav a {
-    float: left;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  
-.topnav :first-child {
-    float: left;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    margin-left: 10%;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-
-.topnav a:hover {
-    background-color: #e3bca6;
-    color: black;
-  }
-  
-  
-.topnav a.active {
-    background-color: #e3bca6;
-    color: rgb(0, 0, 0);
   }
 
 
@@ -171,13 +104,3 @@ body, html {
   }
 }
 
-
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ffffff;
-  margin-top: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
-  margin-left: -10px;
-  margin-right: -10px;
-}
